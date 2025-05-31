@@ -1,4 +1,4 @@
-package ma.saifdine.hd.tp_javafx.models;
+package net.othmane.hd.tp_javafx.models;
 
 public class Product {
 

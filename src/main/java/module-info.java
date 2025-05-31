@@ -1,10 +1,10 @@
-module ma.saifdine.hd.tp_javafx {
+module net.othmane.hd.tp_javafx {
     requires javafx.controls;
     requires javafx.fxml;
 
-    opens ma.saifdine.hd.tp_javafx to javafx.fxml;
-    opens ma.saifdine.hd.tp_javafx.controller to javafx.fxml;
+    opens net.othmane.hd.tp_javafx to javafx.fxml;
+    opens net.othmane.hd.tp_javafx.controller to javafx.fxml;
 
-    exports ma.saifdine.hd.tp_javafx;
-    exports ma.saifdine.hd.tp_javafx.controller;
+    exports net.othmane.hd.tp_javafx;
+    exports net.othmane.hd.tp_javafx.controller;
 }

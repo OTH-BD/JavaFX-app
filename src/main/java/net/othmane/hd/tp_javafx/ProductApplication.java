@@ -1,4 +1,4 @@
-package ma.saifdine.hd.tp_javafx;
+package net.othmane.hd.tp_javafx;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

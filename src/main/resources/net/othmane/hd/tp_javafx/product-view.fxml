@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="net.othmane.hd.tp_javafx.controller.ProductController"
+      spacing="20"
+      alignment="TOP_CENTER"
+      styleClass="main-container"
+      stylesheets="@styles.css">
+
+    <padding>
+        <Insets top="30" right="40" bottom="30" left="40"/>
+    </padding>
+
+    <Label text="🛍️ Gestionnaire de Produits" styleClass="header-label"/>
+
+    <GridPane hgap="15" vgap="15" styleClass="form-grid">
+        <Label text="📝 Nom :" GridPane.rowIndex="0" GridPane.columnIndex="0" styleClass="form-label"/>
+        <TextField fx:id="nameField" promptText="Entrez le nom du produit" GridPane.rowIndex="0" GridPane.columnIndex="1" styleClass="form-input"/>
+
+        <Label text="💰 Prix :" GridPane.rowIndex="1" GridPane.columnIndex="0" styleClass="form-label"/>
+        <TextField fx:id="priceField" promptText="Entrez le prix" GridPane.rowIndex="1" GridPane.columnIndex="1" styleClass="form-input"/>
+
+        <HBox spacing="15" alignment="CENTER_RIGHT" GridPane.rowIndex="2" GridPane.columnIndex="1">
+            <Button fx:id="addButton" text="Ajouter ➕" onAction="#handleAddProduct" styleClass="button-primary"/>
+            <Button fx:id="deleteButton" text="Supprimer ❌" onAction="#handleDeleteProduct" styleClass="button-danger"/>
+        </HBox>
+    </GridPane>
+
+    <ListView fx:id="productList" VBox.vgrow="ALWAYS" styleClass="product-list"/>
+
+
+</VBox>

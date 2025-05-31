@@ -60,7 +60,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>ma.saifdine.hd.tp_javafx/ma.saifdine.hd.tp_javafx.MainApp</mainClass>
+                            <mainClass>net.othmane.hd.tp_javafx/net.othmane.hd.tp_javafx.MainApp</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>
